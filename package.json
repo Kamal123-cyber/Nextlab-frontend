@@ -2,12 +2,13 @@
   "name": "test2",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+ "scripts": {
+  "dev": "next dev --turbopack",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+},
   "dependencies": {
     "@opennextjs/cloudflare": "^1.17.1",
     "next": "^15.5.10",
